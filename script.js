@@ -16,9 +16,9 @@ function createTags(input) {
   tagElements.innerHTML = ''
 
   tags.forEach((tag) => {
-    const tagElements = document.createElement('span')
-    tagElements.classList.add('tag')
-    tagElements.innerText = tag
-    tagElements.appendChild(tagElements)
+    const tagEl = document.createElement('span')
+    tagEl.classList.add('tag')
+    tagEl.innerText = tag
+    tagElements.appendChild(tagEl)
   })
 }
